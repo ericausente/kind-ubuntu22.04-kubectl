@@ -30,7 +30,7 @@ nodes:
 - role: worker
 - role: worker
 EOF
-sudo kind create cluster --name k8s-playground --config kind-config.yaml
+sudo kind create cluster --name k8s-playground --config kind-cluster/kind.config.yaml
 
 #Install kubectl 
 sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
